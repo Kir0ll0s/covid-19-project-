@@ -1,0 +1,891 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css
+    ">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>front end project</title>
+</head>
+<body>
+    <div id="app">
+        
+            
+            <nav class="navbar navbar-expand-lg">
+                
+                <div class="container-fluid">
+                    <a class="navbar-brand icon" href="#">C<img src="./imgs/TitleIcon.png" alt="">VID19</a>
+                    <div class="navbar-toggler" @click="toggleShowNav">
+                        <span class="navbar-toggler-icon bar"></span>
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#home">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#About">About Corona</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#symptoms">Symploms</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#prevention">preventon</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#treatment">treatment</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#faq">FAQ</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#news">News</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link button" href="#d-n">Do & Don't</a>
+                            </li>
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+            <!-- mobile nav  -->
+
+            <div class="over-color" v-show="showNav">
+                <i @click="toggleShowNav" class="fa-solid fa-circle-xmark fa-2x"></i>
+
+                <div class="mob-nav" >
+                    
+                    
+                    <a class="nav-link" href="#home">Home</a>
+                    <a class="nav-link" href="#about">About Corona</a>
+                    <a class="nav-link" href="#symptoms">Symploms</a>
+                    <a class="nav-link" href="#prevention">prevention</a>
+                    <a class="nav-link" href="#treatment">treatment</a>
+                    <a class="nav-link" href="#faq">FAQ</a>
+                    <a class="nav-link " href="#News">News</a>
+                    <a class="nav-link button" href="#d-n">Do & Don't</a>
+                    
+                </div>
+            </div>
+            <!-- end nav bar mobile and web  -->
+
+    </div>
+
+    <!-- start landing section  -->
+    <section id="home" class="landing">
+        <div class="container d-flex">
+            <div class="info ">
+                <div class="title d-flex flex-wrap" data-aos="fade-up"
+                data-aos-anchor-placement="center-center">
+                    <h1>CORONA</h1>
+                    <div class="side-title">
+                        <h3>COVID-19</h3>
+                        <h2>VIRUS</h2>
+                    </div>
+                </div>
+                <p class="cov-p">The coeonavirus (COVID-19) was fitst repotted Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus explicabo fugit exercitationem id soluta nemo tempora, ipsum libero eos maiores?</p>
+                <span class="button">How to protect <i class="fa-solid fa-shield-halved"></i></span>
+                <span>About COVID-19 <i class="fa-solid fa-arrow-right"></i></span>
+                <div class="statistics d-flex flex-wrap">
+                    <div>
+                        <p>WORDWIDE CASES</p>
+                        <b>8,949,671</b>
+                    </div>
+                    <div>
+                        <p>DEATNS</p>
+                        <b>467,432</b>
+                    </div>
+                    <div>
+                        <p>RECOVERD</p>
+                        <b>4,556,091</b>
+                    </div>
+                </div>
+                <p c`lass="l-p">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eaque, tempore?</p>
+            </div>
+            <img  src="./imgs/header-a.png" alt="">
+        </div>
+    </section>
+        <!-- end landing section  -->
+     <!-- start about  -->
+     <section id="about">
+        <div class="container d-flex">
+            
+            <div class="info" data-aos="zoom-out-right">
+                <p class="header"> ABUT THE DISEASE</p>
+                <h1>CORONAVIRUS (COVID-19)</h1>
+                <p><b>covid-19 is a new illness that can affect your lungs and alrways.</b> lt's vaused by a virus called coronavirus. it was discovered in December 2019 in wuhan, Hubei china.</p>
+                <p>common signs of infection include resporatory symptoms,fever,cough shortness of breath and breathing diffculties in more severe cases, infection can couse pneumonia severe acude resporatory syndrom, kidney falure and even death</p>
+                <p>common signs of infection include resporatory symptoms,fever,cough shortness of breath and breathing diffculties in more severe cases, infection can couse pneumonia severe acude resporatory syndrom, kidney falure and even death</p>
+            </div>
+
+            <ul class="list-group" data-aos="fade-left"
+            data-aos-anchor="#example-anchor"
+            data-aos-offset="500"
+            data-aos-duration="500">
+
+                <li class="header list-group-item">What you need to Know</li>
+                <li class="list-group-item">How coronavirus is spread <i class="fa-solid fa-arrow-right"></i></li>
+                <li class="list-group-item">symptoms of coronavirus<i class="fa-solid fa-arrow-right"></i></li>
+                <li class="list-group-item">how to protect yourself<i class="fa-solid fa-arrow-right"></i></li>
+                <li class="list-group-item">Myth-busters of coronavirus<i class="fa-solid fa-arrow-right"></i></li>
+                <li class="list-group-item">Myth-busters of coronavirus<i class="fa-solid fa-arrow-right"></i></li>
+                <li class="list-group-item">Question & answers<i class="fa-solid fa-arrow-right"></i></li>
+            </ul>
+        </div>
+    </section>
+    <!-- end about  -->
+    <!-- start transmision  -->
+    <div class="transmission">
+        <div class="container">
+
+                <p class="light">HOW CORONAVIRUS IS SPREAD</p>
+                <h1 class="dark">TRANSMISSION OF COVID-19</h1>
+                <p>becaus  it's a new illness, we do not know exactly how coronavirus spreads from person<br> lo person similar viruses are spread in cough dropeds</p>
+
+            <div class="cards d-flex">
+                <div class="card" style="width: 25rem;" data-aos="zoom-in-right">
+                    <img src="./imgs/spread-a.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="light">person-to peeson spead as close contact with infexted</p>
+                        <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 25rem;" data-aos="zoom-out-down">
+                        <img src="./imgs/spread-b.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="light">person-to peeson spead as close contact with infexted</p>
+                            <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                        </div>
+                    </div>
+                    <div class="card" style="width: 25rem;" data-aos="zoom-in-left">
+                        <img src="./imgs/spread-c.png" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="light">person-to peeson spead as close contact with infexted</p>
+                            <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                        </div>
+                    </div>
+            </div>
+            <span class="button" data-aos="zoom-in-down"><i class="fa-regular fa-circle-question"></i> Have question about spreading ?</span>
+        </div>
+        <!-- end transmision  -->
+        <!-- start symptoms  -->
+        <div id="symptoms" class="symptoms">
+            <div class="container">
+
+                    <p class="light">WHAT ARE THE symptoms of covid-19</p>
+                    <h1 class="dark">sympotoms of coronavirus</h1>
+                    <p>the most xommon symptoms of COVID-19 are fever tiredness,and dir cough <br> some patients may have aches and paons,nasal confestion runny nose sare throat or <br> diarrhea. these synptoms are usally mid and begin gradually mild and <br> begin gradually also the symptoms may appear 2-17 days after exposure</p>
+
+                <div class="cards d-flex">
+                    <div class="card" data-aos="zoom-in-right">
+                        <img src="./imgs/symptom-a.png" alt="">
+                        <p class="light">faver</p>
+                        <p><b>high fave/</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                    <div class="card" data-aos="zoom-out-down">
+                        <img src="./imgs/symptom-b.png" alt="">
+                        <p class="light">cough</p>
+                        <p><b>continuous cough</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                    <div class="card" data-aos="zoom-in-left">
+                        <img src="./imgs/symptom-c.png" alt="">
+                        <p class="light">shortness of breath</p>
+                        <p><b>Difficulty breathing</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                </div>
+                <div class="warning d-flex">
+                    <div class="text d-flex ">
+                        <i class="light fa-solid fa-triangle-exclamation fa-4x"></i>
+                        <p><b class="light">stay at home and call your doctor</b>: if you think you been exposed to COVID-19 and develop a fever and any symptoms such as cough or diffivulty breathing call your healthcare provider as soon as possible for medical advice</p>
+                    </div>
+                    <span class="button" data-aos="zoom-in-down "><i class="fa-regular fa-circle-question"></i> Have question about spreading ?</span>
+                </div>
+            </div>
+        </div>
+        <!-- end symptoms -->
+         <!-- start prevention  -->
+         <div id="prevention" class="prevention">
+            <div class="container">
+
+                    <p class="light">how to protect yourself?</p>
+                    <h1 class="dark">prevention & advice</h1>
+                    <p>the most xommon symptoms of COVID-19 are fever tiredness,and dir cough <br> some patients may have aches and paons,nasal confestion runny nose sare throat or <br> diarrhea. these synptoms are usally mid and begin gradually mild and <br> begin gradually also the symptoms may appear 2-17 days after exposure</p>
+
+                <div class="cards d-flex">
+                    <div class="cardp" data-aos="zoom-in-right">
+                        <img src="./imgs/advice-a.png" alt="">
+                        <b>wash your hands frequently</b>
+                        <p><b>high fave/</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                    <div class="cardp" data-aos="zoom-out-down">
+                        
+                        <img src="./imgs/advice-b.png" alt="">
+                        <b>maintain social distancing</b>
+                        <p><b>continuous cough</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                    <div class="cardp" data-aos="zoom-in-left">
+                        
+                        <img src="./imgs/advice-c.png" alt="">
+                        <b>aboid tuching face</b>
+                        <p><b>Difficulty breathing</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                    <div class="cardp" data-aos="zoom-in-left">
+                        <img src="./imgs/advice-d.png" alt="">
+                        
+                        <b>practice resporatory hygiene</b>
+                        <p><b>Difficulty breathing</b>- Lorem, ipsum dolor sit amet consectetur adipisicing elit. Harum quis veritatis adipisci animi sequi reprehenderit. Aspernatur sapiente natus voluptatum quae?</p>
+                    </div>
+                </div>
+                <span class="button" data-aos="zoom-in-down "> Have question about spreading  <i class="fa-solid fa-arrow-right"></i></span>
+                <span class="light">Q&A on coronavirus <i class="fa-solid fa-arrow-right"></i></span>
+
+                <div class="big-card d-flex">
+                    <div class="text">
+                        <h2>take steps to protext others</h2>
+                        <p data-aos="zoom-in"><b>stay home if you're sick</b> - stay home if you are sivk exept to get medical care.</p>
+                        <p data-aos="zoom-in"><b>cover your mouth and nose</b> - with a tissue when you cough or sneeze (throw used tissues in the trash) or use the inside of your elbow.</p>
+                        <p data-aos="zoom-in"><b>wear a facemask if you are</b> -you should wear a face mask when you are around other people (e.g sharing a room or behicle) and before you enter a healthcare provide's</p>
+                        <p data-aos="zoom-in"><b>clean AND disinfact frequently touched surfaces daily </b> - this includes phones lables light switchs, doorknovs countetops, handles desks toilts faucets and sinks </p>
+                        <p data-aos="zoom-in"><b>Clean the dirty surfaces</b> - Use detergent or soap and water prior to disindavtion</p>
+                        <p data-aos="zoom-in"><b>Stay informed about the local COVID-19 situation</b> - Get up-to-date information about local COVID-19 activity form <a href="#">puplic health officials</a></p>
+                        <p data-aos="zoom-in"><b>Dedocated, lined trash can</b> - if possivle, dedicate a lined trash can for the ill person use gloves when removing garbage bagsm and handling & disposing of trash</p>
+                    </div>
+                    <img src="./imgs/steps.png" alt="">
+                </div>
+                <div class="steps">
+                    <h2>follow steps to wash hands</h2>
+                    <span class="light">Whay do i need to wash hand <i class="fa-solid fa-arrow-right"></i></span>
+                    
+                    <div class="s-cards d-flex flex-wrap ">
+                        
+                            <div class="cardp" data-aos="zoom-in-right">
+                                <img src="./imgs/hand-a.png" alt="">
+                                <b>soap on<br>hand</b>
+                            </div>
+                            <div class="cardp" data-aos="zoom-out-down">
+                                
+                                <img src="./imgs/hand-b.png" alt="">
+                                <b>plam on<br>plam</b>
+                                
+                            </div>
+                            <div class="cardp" data-aos="zoom-in-left">
+                                
+                                <img src="./imgs/hand-c.png" alt="">
+                                <b>bewteen<br>fingers</b>
+                                
+                            </div>
+                        
+                        
+
+                            <div class="cardp" data-aos="zoom-in-left">
+                                <img src="./imgs/hand-d.png" alt="">
+                                <b>back to<br>hands</b>
+                            </div>
+                            <div class="cardp" data-aos="zoom-in-left">
+                                <img src="./imgs/hand-e.png" alt="">
+                                <b>clean with<br>water</b>
+                            </div>
+                            <div class="cardp" data-aos="zoom-in-left">
+                                <img src="./imgs/hand-f.png" alt="">
+                                <b>focus on<br>wrist</b>
+                            </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end prevention -->
+        <!-- start treatment section  -->
+        <section id="treatment" class="treatment">
+            <div class="container d-flex">
+                <div class="text" >
+                <h3 data-aos="fade-right">BE CAREFULL & STAY SAFE</h3>
+                <h1 data-aos="fade-right">TREATMENT FOR CORONAVIRUS</h1>
+                <P data-aos="fade-right"><b>To date,there is no vaccien and no specific antiviral medicine to prevent or treart COVID-2019.</b> However,those addected should receive care to relieve symptoms people with serious illness should be hospitalized most patients recover thanks to supportive care</P>
+                <P data-aos="fade-right">However,those addected should receive care to relieve symptoms people with serious illness should be hospitalized most patients recover thanks to supportive care</P>
+                </div>
+                <div class="m-card" data-aos="fade-left">
+                    <b>self care</b>
+                    <p>if you have mild sumptoms, stay at home untill you've recoverd. You can relieve your symptoms if you :</p>
+                    <p><i class="fa-solid fa-arrow-right"></i> Rest and sleep</p>
+                    <p><i class="fa-solid fa-arrow-right"></i> Rest and sleep</p>
+                    <p><i class="fa-solid fa-arrow-right"></i> Rest and sleep</p>
+                    <p><i class="fa-solid fa-arrow-right"></i> Use a room humidifier or take a hot shower to  help ease a sore thoat and cough</p>
+                    <b>medical Treatments</b>
+                    <p>if you develp a lever, cough and have difficully breathing, promptlu seek medical care call in advance and tell your health provider of any recent travel or recent contact with travelers</p>
+                </div>
+            </div>
+        </section>
+    <!-- end treatment section  -->
+    <!-- start d-n  -->
+    <section id="d-n" class="d-n">
+        <div class="container">
+
+            <b class="light">DO'S & DON'TS</b>
+            <h1 class="dark">protect yourself</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolores at nulla ex voluptates quas blanditiis numquam aliquam nobis animi pariatur reiciendis, eaque porro laudantium ab mollitia odit autem esse debitis enim culpa consectetur? Ab aut fugiat, asperiores ipsa consequatur architecto libero eum expedita dolorum error nemo sequi! Ab, assumenda? Veritatis.</p>
+
+            <div class="img d-flex">
+
+                <div class="donot">
+                    <div class="line" data-aos="fade-right">
+                        <b class="light">Avoid close contact</b>
+                        <div>
+                            <img src="./imgs/donts-a.png" alt="">
+                        </div>
+                    </div>
+                    <div class="line" data-aos="fade-right">
+                        <b class="light">Don't Tuch Face</b>
+                        <div>
+                            <img src="./imgs/donts-b.png" alt="">
+                        </div>
+                    </div>
+                    <div class="line" data-aos="fade-right">
+                        <b class="light">Social Distancing</b>
+                        <div>
+                            <img src="./imgs/donts-c.png" alt="">
+                        </div>
+                    </div>
+                </div>
+                
+                <img class="main" src="./imgs/protect.png" alt="" data-aos="zoom-in-down">
+
+                <div class="do">
+                    <div class="line" data-aos="fade-left">
+                        <div>
+                            <img src="./imgs/dos-a.png" alt="">
+                        </div>
+                        <b class="light">Wash Your Hands</b>
+                    </div>
+                    <div class="line" data-aos="fade-left">
+                        <div>
+                            <img src="./imgs/dos-b.png" alt="">
+                        </div>
+                        <b class="light">Drink Much Water</b>
+                    </div>
+                    <div class="line" data-aos="fade-left">
+                        <div>
+                            <img src="./imgs/dos-c.png" alt="">
+                        </div>
+                        <b class="light">Use Face Mask</b>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+<!-- end d-n -->
+<!-- start FAQ  -->
+
+<div id="apps">
+    
+    <section id="faq" class="faq">
+        <div class="container">
+
+            <b class="light">frequently asked question</b>
+            <h1 class="dark">common question & answer</h1>
+                <div class="box d-flex">
+
+                    <ul  class="list-group">
+                        <li  @click="toggleFsec" class="list-group-item" >An item</li>
+                        <li  @click="toggle2sec" class="list-group-item">A second item</li>
+                        <li  @click="toggle3sec" class="list-group-item">A third item</li>
+                        <li  @click="toggle4sec" class="list-group-item">A fourth item</li>
+                        <li  @click="toggle5sec" class="list-group-item">And a fifth one</li>
+                        <li  @click="toggle6sec" class="list-group-item">And a fifth one</li>
+                    </ul>
+                    <!-- 1111111111111111111111111111 time -->
+
+                        <div v-show="showFsec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is a nove! coronavirus ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                Whay is the disease being called coronavirus disease 2019, COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                How can people help stop stigma related to COVID-19 ?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingThree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                Why might someone blame or avoid indivuals and groups ?
+                                </button>
+                            </h2>
+                            <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+
+                        <!-- 222222222222222222 times  -->
+                        <div v-show="show2sec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What is the seoutce of the cirus ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How does the virus spead ?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                Can someone who has had COVID-19 spread the illness to others ?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                Will warm weather stop the outbreak of COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingthree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                                    can the virus that couses COVID-19 be spread through food including refrigrated of frozen food?
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingsex">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesex" aria-expanded="false" aria-controls="collapseTwo">
+                                    What is communit spread?
+                                    </button>
+                                </h2>
+                                <div id="collapsesex" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <!-- 33333333333333333333times  -->
+                        <div v-show="show3sec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What can i do to protext myself and prevent the spread of disease ?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                what should i do if i had close contact with someone who has COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                who is at higher risk for serious illness form COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                What should people at higher risk of serious illiness with COVID-19 do?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingthree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                                    Should i wear a mask to protect myself?
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                            
+                        </div>
+                        <!-- 44444444444444444444444 times  -->
+                        <div v-show="show4sec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What are the symptoms of COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                should i be tested for COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                Where can i get tested for COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                Can a person test negative and later test positive for COVID-19?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- 555555555555555555555555555times  -->
+                        <div v-show="show5sec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                What should i do if there is an outbreak in my community?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                How do i prepare my children in case of COVID-19 Outbreak in our community?
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                What steps should parents take to protect children during a community outbreak?
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                Will scholls be dismissed if there is an outbreak in my community?
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingthree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can the virus that causes COVID-19 be spread through food, including refrigerated or frozen food?
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingsex">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesex" aria-expanded="false" aria-controls="collapseTwo">
+                                    should i go wo work if there is an outbreak in my community?
+                                    </button>
+                                </h2>
+                                <div id="collapsesex" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                        <!-- 666666666666666666666666 times  -->
+                        <div v-show="show6sec" class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingOne">
+                                <button class=" light accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                COVID-19 virus can be transmitted in areas tith hot and humid climates?
+                                </button>
+                            </h2>
+                            <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the first item's accordion body.</strong> It is shown by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingTwo">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                                cold weather and snow CANNOT kill the new coronavirus
+                                </button>
+                            </h2>
+                            <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingthree">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsethree" aria-expanded="false" aria-controls="collapseTwo">
+                                Taking a hot bath does not prevent the new coronavirus disease
+                                </button>
+                            </h2>
+                            <div id="collapsethree" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                            <h2 class="accordion-header" id="headingfour">
+                                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefour" aria-expanded="false" aria-controls="collapseThree">
+                                the new coronavirus CANNOT be transmitted through mosqulto bites.
+                                </button>
+                            </h2>
+                            <div id="collapsefour" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                <div class="accordion-body">
+                                <strong>This is the third item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                </div>
+                            </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingthree">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsefive" aria-expanded="false" aria-controls="collapseTwo">
+                                    Are hand dryers effective in killing the new coronavirus?
+                                    </button>
+                                </h2>
+                                <div id="collapsefive" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingsex">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapsesex" aria-expanded="false" aria-controls="collapseTwo">
+                                    Can an ultraviolet disinfection lamp kill the new coronavirus?
+                                    </button>
+                                </h2>
+                                <div id="collapsesex" class="accordion-collapse collapse" aria-labelledby="headingthree" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                    <strong>This is the second item's accordion body.</strong> It is hidden by default, until the collapse plugin adds the appropriate classes that we use to style each element. These classes control the overall appearance, as well as the showing and hiding via CSS transitions. You can modify any of this with custom CSS or overriding our default variables. It's also worth noting that just about any HTML can go within the <code>.accordion-body</code>, though the transition does limit overflow.
+                                    </div>
+                                </div>
+                                </div>
+                        </div>
+                </div>
+        </div>
+
+    </section>
+</div>
+<!-- end FAQ  -->
+<!-- start update  -->
+<div id="news" class="udate">
+    <div class="container">
+
+            <p class="light">recent frome blog</p>
+            <h1 class="dark">latest update</h1>
+
+        <div class="cards d-flex">
+            <div class="card" style="width: 25rem;" data-aos="zoom-in-right">
+                <img src="./imgs/blog-a.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <b>caring for someone at home</b>
+                    <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;" data-aos="zoom-out-down">
+                    <img src="./imgs/blog-b.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <b>15 ways to keep safe and healthy</b>
+                        <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                    </div>
+                </div>
+                <div class="card" style="width: 25rem;" data-aos="zoom-in-left">
+                    <img src="./imgs/blog-c.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <b>if you think you are sick</b>
+                        <p class="card-text">the coronavirus is thought to spread mainily form person to person this can happen between people who are in close contact with one</p>
+                    </div>
+                </div>
+        </div>
+    </div>
+    <!-- end update  -->
+<!-- start footer -->
+<footer>
+    <div class="container">
+
+        <img src="./imgs/light-logo.png" alt="">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Consequuntur illum saepe deleniti eos perferendis quidem molestiae fugit, vero laboriosam fugiat.</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo, adipisci!</p>
+        <button type="button" class="btn btn-drck">find Us on facebook</button>
+        <button type="button" class="btn btn-light">find Us on twitter</button>
+        <button type="button" class="btn btn-danger">find Us on instagram</button>
+        <div class="columns d-flex">
+            <div class="col">
+                <a class="ac" href="#">quick line</a>
+                <a href="#">about corona</a>
+                <a href="#">symptoms</a>
+                <a href="#">prevention</a>
+                <a href="#">protect</a>
+                <a href="#">FAQs</a>
+            </div>
+            <div class="col">
+                <a class="ac" href="#">HELPULL LINK</a>
+                <a href="#">healthcare professonals</a>
+                <a href="#">healthcare faclities</a>
+                <a href="#">Older Adulls & madical conditions</a>
+                <a href="#">Repeare your Gamily</a>
+            
+            </div>
+            <div class="col">
+                <a class="ac" href="#">IMPORTANT LINK</a>
+                <a href="#">WHO Website</a>
+                <a href="#">CDC Website</a>
+                <a href="#">NHS Website</a>
+                <a href="#">Harvard Health</a>
+            </div>
+        </div>
+        <hr>
+        <p>&copy; 2023 COVID-19 template madle by <span class="ac">Kirollos Abd El-sayd </span> thanks you ♥</p>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Atque hic perferendis perspiciatis recusandae molestiae culpa nostrum tempore placeat. Iusto suscipit officia est accusamus nobis quam excepturi sed explicabo delectus vero ullam quaerat repudiandae voluptates alias reprehenderit molestiae illum, modi incidunt facilis recusandae enim fugit asperiores, vel voluptatem! Cum, deserunt exercitationem?</p>
+    </div>
+</footer>
+<!-- end footer  -->
+        
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+<script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+    <script src="./index.js"></script>
+</body>
+</html>
